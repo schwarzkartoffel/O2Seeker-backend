@@ -1,8 +1,6 @@
 language: node_js
 node_js:
   - 14
-script:
-  - npm start
 deploy:
   provider: heroku
   api_key: 11253934-1940-410d-bee0-b4e13abf6f6a
