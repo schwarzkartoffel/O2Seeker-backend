@@ -1,9 +1,12 @@
 language: node_js
 node_js:
-  - 14
+- 14
 deploy:
   provider: heroku
-  api_key: 11253934-1940-410d-bee0-b4e13abf6f6a
+  api_key: $HEROKU_API_KEY
   app: o2seeker-backend
   on:
     repo: schwarzkartoffel/O2Seeker-backend
+env:
+  global:
+    secure: gihqX6tEm5D1nC7TBA839jjjBI+V7kmL1Wi3xEkDweynnm8ms6vA0PNuuykcGq/hfuhE7qX5jP3RbqB9qxyNjx8RQYHpnidxTJ0sDtNUtOPrj19u47zb+KgpursNZagvYgAHCPVHGQ7BrgW9DQjykewE3WYpu9akjptSkRZL0fWi/H6smybxQuNkC0fglfGpEATAbxVGOXb5Y4VjpNXw4Z+I2CeasYIoDE5P5dEYhHCeXoXn0Zy8aTXXl6Y9ErUlhJzyif7XrQ53y/7M7C3T1XU8rZHMeXXENNoHCkCglvKgmi6imRGTvaNmecD3Eeir3Nj77JMamomGb5v4EZ3k/pqDWdkznPWVyv8XH9tasRbpNUajXU5UthbMbOPYB6EgsHjKsl+CxByn/vI3QZko0LIFpfLVZxexEzRa2wvFIe0K8sgbldjHynMWq6v1MM3Hg18p8kYb4hXx+BXiNAwRuI+xoy+TqkWTmzWf2Abz9k6djxGEQUua/Lo4wintNuBK15k2slB23fQQFlfWlIisroaSQHq4azlddwN4Xrf2Zdv4eMN2ZwlQakImuItm25MCsUzGxIUmSEantb5om8BE31StU5y9cwf9xayq7A+J4qGJoqKC2j49vhKbquukAYSNaoMtcMSpARFHt45NT+W6zgz15NsVEyYQmrF/oGTiZdU=
